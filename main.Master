@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Pre_project01.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%-- bootstap --%>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <%-- nav bar --%>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light heightcss">
+  <div class="container-fluid">
+    <a class="navbar-brand text-sm-start" href="#">
+        <img src="images/LOGO.png" height="50px" width="68px" class="d-inline-block align-text-top"/>
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.aspx">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="findservices.aspx">Find Services</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.aspx">contact</a>
+          </li>
+      </ul>
+      <span class="navbar-text">
+          <asp:Button ID="Button1" runat="server" Text="LOGIN / SIGNUP" class="btn btn-outline-info" OnClick="Button1_Click" /> 
+      </span>
+       
+    </div>
+        
+  </div>
+</nav>
+        </div>
+        <div class="cont">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%-- footer --%>
+        <footer class="text-white h-75 bg-primary">
+            
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="images/LOGO.png" height="60px"/>
+                        <div class="text-white">
+                        About us - ADOCMEDI is a website <br /> patients,doctors and pharma people all <br />
+                            come at one platform to make their life more <br />
+                            easier. We will provide full security and <br /> privacy for your data.
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-5">
+                            For Services
+                        <ul>
+                            <li><a href="#">Search for Doctors</a></li>
+                            <li><a href="#"> Login</a></li>
+                            <li><a href="#"> Register</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 p-5">
+                            For Others Login
+                        <ul>
+                            <li><a href="#">Admin</a></li>
+                            <li><a href="#">Service provider</a></li>
+                            <li><a href="#">Customer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-5">
+                        Contact Us
+                        <ul>
+                            <li>Shree dnica,Anand</li>
+                            <li>85888548945</li>
+                            <li>jatinpadhiyar@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr />
+                </div>  
+                <div class="row p-2">
+                    <p>ALL roght reserve</p>
+                </div>
+                       
+                        
+                       
+                      
+ 
+
+
+            
+        </footer>
+    </form>
+</body>
+</html>
