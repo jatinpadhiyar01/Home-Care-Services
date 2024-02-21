@@ -1,0 +1,24 @@
+﻿.bgft   {
+    background-color: #15558d;
+    font-family:sans-serif;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.palce-font-color {
+    color: #757575;
+}
+.banner-header {
+    color: #272b41;
+}
+.home-img-height{
+    height:350px;
+    
+}
+.cont{
+    min-height:Calc(100vh - 70px - 12vh);
+}
+.heightcss{
+    height:70px;
+}
